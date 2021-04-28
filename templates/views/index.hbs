@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather_ic.png">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>WeatherAPP</title>
+</head>
+<body>
+    {{>header}}
+    <div>
+        <form name="formWeather">
+            <input  type="text"
+                    class="txtCity"
+                    size="10"
+                    placeholder="City..." />
+
+            <button>Search</button>
+        </form>
+    </div>
+    <div>
+        <p id="location">Welcome to the very first <br /> weather application of Jakub Vala.</p>
+        <p id="weatherMsg">Enjoy the stay here...</p>
+    </div>
+
+    {{>para}}
+    {{>footer}}
+    <script language="javascript" src="./js/app.js"></script>
+</body>
+</html>
